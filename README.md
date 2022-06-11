@@ -1,5 +1,5 @@
 # Angry Metal
-Simple port to iOS and Metal API.
+[AngreGL](https://github.com/ntcaston/AngryGL) port to iOS and Metal API.
 
 Main goal was to port original OpenGL version to iOS and Metal API, but during the work I decided to use ECS approach. Also I added simple HUD with Dear ImGui.
 
