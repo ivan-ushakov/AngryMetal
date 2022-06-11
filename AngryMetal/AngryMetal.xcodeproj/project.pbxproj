@@ -1,0 +1,1067 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C03DEEE2659798C005A3437 /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C03DEEC2659798C005A3437 /* image.cpp */; };
+		2C03DEEF2659798C005A3437 /* image.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C03DEED2659798C005A3437 /* image.hpp */; };
+		2C1E67C42663724C0038FCBE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1E67C32663724C0038FCBE /* Accelerate.framework */; };
+		2C1E67C826639BBA0038FCBE /* animation_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C1E67C626639BBA0038FCBE /* animation_component.hpp */; };
+		2C21D46F268237D300E6BB9C /* instanced_mesh_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C21D46E268237D300E6BB9C /* instanced_mesh_component.hpp */; };
+		2C21D4712682384800E6BB9C /* mesh.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C21D4702682384800E6BB9C /* mesh.hpp */; };
+		2C254956265EDB0F00198EFA /* buffer_manager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C254954265EDB0F00198EFA /* buffer_manager.mm */; };
+		2C254957265EDB0F00198EFA /* buffer_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C254955265EDB0F00198EFA /* buffer_manager.h */; };
+		2C301F502686F7B20045C2AC /* resource_manager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C301F4F2686F7B20045C2AC /* resource_manager.hpp */; };
+		2C301F512686F8190045C2AC /* buffer_manager_interface.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C254959265EE04600198EFA /* buffer_manager_interface.hpp */; };
+		2C301F522686F8280045C2AC /* texture_manager_interface.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C7818D726748CEA00DFE1CD /* texture_manager_interface.hpp */; };
+		2C301F542686F9260045C2AC /* instanced_mesh_manager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C301F532686F9260045C2AC /* instanced_mesh_manager.hpp */; };
+		2C3085CD26B542CE00F72AC5 /* metal_context.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3085CB26B542CE00F72AC5 /* metal_context.h */; };
+		2C34EDD426F3D152004B3B20 /* shooting_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C34EDD226F3D152004B3B20 /* shooting_system.cpp */; };
+		2C34EDD526F3D152004B3B20 /* shooting_system.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C34EDD326F3D152004B3B20 /* shooting_system.hpp */; };
+		2C3C351326621E0000041372 /* timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C3C351126621E0000041372 /* timer.cpp */; };
+		2C3C351426621E0000041372 /* timer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C3C351226621E0000041372 /* timer.hpp */; };
+		2C5700DF268858B10067B122 /* resource_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C5700DE268858B10067B122 /* resource_manager.cpp */; };
+		2C5700E0268888580067B122 /* camera_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CC477A8266CF5930023EB27 /* camera_component.hpp */; };
+		2C5700E1268888670067B122 /* movement_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CCEE38D265D85CE0038539B /* movement_component.hpp */; };
+		2C5700E22688888F0067B122 /* render_pass_attribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C698195265D63810076DD51 /* render_pass_attribute.h */; };
+		2C5700E32688889C0067B122 /* render_pass.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C698185265A51DC0076DD51 /* render_pass.h */; };
+		2C622A142658DEBC0092F428 /* renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C622A132658DEBC0092F428 /* renderer.mm */; };
+		2C622A182658E18F0092F428 /* objc_ref.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C622A162658E18F0092F428 /* objc_ref.h */; };
+		2C622A1A2658EDAA0092F428 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C622A192658EDAA0092F428 /* Metal.framework */; };
+		2C622A1C2658EDB00092F428 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C622A1B2658EDB00092F428 /* MetalKit.framework */; };
+		2C622A1F2658EF550092F428 /* floor_render_pass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C622A1D2658EF550092F428 /* floor_render_pass.mm */; };
+		2C622A202658EF550092F428 /* floor_render_pass.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C622A1E2658EF550092F428 /* floor_render_pass.h */; };
+		2C622A222658F3000092F428 /* Library.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C622A212658F3000092F428 /* Library.metal */; };
+		2C698187265A56220076DD51 /* render_pass_type.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C698186265A56220076DD51 /* render_pass_type.h */; };
+		2C69818B265A72630076DD51 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 2C69818A265A72630076DD51 /* Assets */; };
+		2C698193265D53EC0076DD51 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C698191265D53EC0076DD51 /* matrix.cpp */; };
+		2C698194265D53EC0076DD51 /* matrix.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C698192265D53EC0076DD51 /* matrix.hpp */; };
+		2C73A13D266BA8F900F4AE09 /* player_input_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C73A13B266BA8F900F4AE09 /* player_input_system.cpp */; };
+		2C73A13E266BA8F900F4AE09 /* player_input_system.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C73A13C266BA8F900F4AE09 /* player_input_system.hpp */; };
+		2C7818DA26748DB800DFE1CD /* texture_manager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C7818D826748DB800DFE1CD /* texture_manager.mm */; };
+		2C7818DB26748DB800DFE1CD /* texture_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7818D926748DB800DFE1CD /* texture_manager.h */; };
+		2C937BDC26626F9F006C7907 /* player_render_pass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C937BDA26626F9F006C7907 /* player_render_pass.mm */; };
+		2C937BDD26626F9F006C7907 /* player_render_pass.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C937BDB26626F9F006C7907 /* player_render_pass.h */; };
+		2C9B57CF267A65A700E9F364 /* transform_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C9B57CE267A64BF00E9F364 /* transform_component.hpp */; };
+		2CA1E0F5279317390064D1C1 /* score_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CA1E0F4279317330064D1C1 /* score_component.hpp */; };
+		2CA1E0F82793265C0064D1C1 /* score_string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1E0F62793265C0064D1C1 /* score_string.cpp */; };
+		2CA1E0F92793265C0064D1C1 /* score_string.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CA1E0F72793265C0064D1C1 /* score_string.hpp */; };
+		2CAA64C926A20DB7001B7CB0 /* entity_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA64C726A20DB7001B7CB0 /* entity_pool.cpp */; };
+		2CAA64CA26A20DB7001B7CB0 /* entity_pool.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CAA64C826A20DB7001B7CB0 /* entity_pool.hpp */; };
+		2CAA64CC26A21787001B7CB0 /* time_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CAA64CB26A21787001B7CB0 /* time_component.hpp */; };
+		2CAA64CF26A21AA5001B7CB0 /* bullet_render_pass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA64CD26A21AA5001B7CB0 /* bullet_render_pass.mm */; };
+		2CAA64D026A21AA5001B7CB0 /* bullet_render_pass.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAA64CE26A21AA5001B7CB0 /* bullet_render_pass.h */; };
+		2CC477AD266D284D0023EB27 /* camera_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CC477AB266D284D0023EB27 /* camera_system.cpp */; };
+		2CC477AE266D284D0023EB27 /* camera_system.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CC477AC266D284D0023EB27 /* camera_system.hpp */; };
+		2CC477B8266EA5610023EB27 /* shadow_map_manager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CC477B6266EA5610023EB27 /* shadow_map_manager.mm */; };
+		2CC477B9266EA5610023EB27 /* shadow_map_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CC477B7266EA5610023EB27 /* shadow_map_manager.h */; };
+		2CC5C159265967620012199A /* shader_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CC5C158265967620012199A /* shader_common.h */; };
+		2CCB3C212651056400ABB133 /* mesh_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CCB3C1F2651056400ABB133 /* mesh_component.hpp */; };
+		2CCB3C2426510ED400ABB133 /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB3C2226510ED400ABB133 /* scene.cpp */; };
+		2CCB3C2526510ED400ABB133 /* scene.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CCB3C2326510ED400ABB133 /* scene.hpp */; };
+		2CCB3C2926513C0D00ABB133 /* renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCB3C2726513C0D00ABB133 /* renderer.h */; };
+		2CCEE38B265D7FE60038539B /* player_animation_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CCEE389265D7FE60038539B /* player_animation_system.cpp */; };
+		2CCEE38C265D7FE60038539B /* player_animation_system.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CCEE38A265D7FE60038539B /* player_animation_system.hpp */; };
+		2CD7B6D626A73E5000BED3FB /* collider_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CD7B6D526A73E4A00BED3FB /* collider_component.hpp */; };
+		2CD8384526A2C25700431592 /* on_exit.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CD8384426A2C25700431592 /* on_exit.hpp */; };
+		2CD8384826A2EE1000431592 /* math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8384626A2EE1000431592 /* math.cpp */; };
+		2CD8384926A2EE1000431592 /* math.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CD8384726A2EE1000431592 /* math.hpp */; };
+		2CE0DFFD26AA065000FA8504 /* hud.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0DFFB26AA065000FA8504 /* hud.mm */; };
+		2CE0DFFE26AA065000FA8504 /* hud.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE0DFFC26AA065000FA8504 /* hud.h */; };
+		2CE4872B27AD843A00967E48 /* input_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CE4872A27AD843A00967E48 /* input_component.hpp */; };
+		2CE4872E27AD873600967E48 /* game_restart_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4872C27AD873600967E48 /* game_restart_system.cpp */; };
+		2CE4872F27AD873600967E48 /* game_restart_system.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CE4872D27AD873600967E48 /* game_restart_system.hpp */; };
+		2CE61E6427B569800097D3DD /* play_screen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CE61E6227B569800097D3DD /* play_screen.mm */; };
+		2CE61E6527B569800097D3DD /* play_screen.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CE61E6327B569800097D3DD /* play_screen.hpp */; };
+		2CE61E6827B569900097D3DD /* game_over_screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE61E6627B569900097D3DD /* game_over_screen.cpp */; };
+		2CE61E6927B569900097D3DD /* game_over_screen.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CE61E6727B569900097D3DD /* game_over_screen.hpp */; };
+		2CE9698526A4840100F195FA /* look_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CE9698426A4840100F195FA /* look_component.hpp */; };
+		2CF2350F26500513007E9080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2350E26500513007E9080 /* AppDelegate.swift */; };
+		2CF2351126500513007E9080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2351026500513007E9080 /* SceneDelegate.swift */; };
+		2CF2351326500513007E9080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2351226500513007E9080 /* ViewController.swift */; };
+		2CF2351626500513007E9080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF2351426500513007E9080 /* Main.storyboard */; };
+		2CF2351826500515007E9080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF2351726500515007E9080 /* Assets.xcassets */; };
+		2CF2351B26500515007E9080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF2351926500515007E9080 /* LaunchScreen.storyboard */; };
+		2CF23530265005B4007E9080 /* AngryKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF23527265005B4007E9080 /* AngryKit.framework */; };
+		2CF23537265005B4007E9080 /* AngryKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF23536265005B4007E9080 /* AngryKitTests.m */; };
+		2CF23539265005B4007E9080 /* AngryKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF23529265005B4007E9080 /* AngryKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CF2353C265005B4007E9080 /* AngryKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF23527265005B4007E9080 /* AngryKit.framework */; };
+		2CF2353D265005B4007E9080 /* AngryKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF23527265005B4007E9080 /* AngryKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CF2354726500732007E9080 /* Game.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF2354526500732007E9080 /* Game.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CF2354826500732007E9080 /* Game.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2354626500732007E9080 /* Game.mm */; };
+		2CF71610267783F0000133BB /* enemy_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7160E267783F0000133BB /* enemy_system.cpp */; };
+		2CF71611267783F0000133BB /* enemy_system.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CF7160F267783F0000133BB /* enemy_system.hpp */; };
+		2CF7161426779C27000133BB /* enemy_render_pass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7161226779C27000133BB /* enemy_render_pass.mm */; };
+		2CF7161526779C27000133BB /* enemy_render_pass.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF7161326779C27000133BB /* enemy_render_pass.h */; };
+		2CFB1438268E32BF00D089B4 /* instanced_mesh_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB1437268E32BF00D089B4 /* instanced_mesh_manager.cpp */; };
+		2CFBD21226962D5100425369 /* bullet_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBD21026962D5100425369 /* bullet_system.cpp */; };
+		2CFBD21326962D5100425369 /* bullet_system.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CFBD21126962D5100425369 /* bullet_system.hpp */; };
+		2CFF9AB7267DD74500042787 /* health_component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2CFF9AB6267DD74500042787 /* health_component.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CF23531265005B4007E9080 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF2350326500513007E9080 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF23526265005B4007E9080;
+			remoteInfo = AngryKit;
+		};
+		2CF23533265005B4007E9080 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF2350326500513007E9080 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF2350A26500513007E9080;
+			remoteInfo = AngryMetal;
+		};
+		2CF2353A265005B4007E9080 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF2350326500513007E9080 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF23526265005B4007E9080;
+			remoteInfo = AngryKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CF23541265005B4007E9080 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2CF2353D265005B4007E9080 /* AngryKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2C03DEEC2659798C005A3437 /* image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = image.cpp; sourceTree = "<group>"; };
+		2C03DEED2659798C005A3437 /* image.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = image.hpp; sourceTree = "<group>"; };
+		2C1E67C32663724C0038FCBE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		2C1E67C626639BBA0038FCBE /* animation_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = animation_component.hpp; sourceTree = "<group>"; };
+		2C21D46E268237D300E6BB9C /* instanced_mesh_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = instanced_mesh_component.hpp; sourceTree = "<group>"; };
+		2C21D4702682384800E6BB9C /* mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mesh.hpp; sourceTree = "<group>"; };
+		2C254954265EDB0F00198EFA /* buffer_manager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = buffer_manager.mm; sourceTree = "<group>"; };
+		2C254955265EDB0F00198EFA /* buffer_manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = buffer_manager.h; sourceTree = "<group>"; };
+		2C254959265EE04600198EFA /* buffer_manager_interface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = buffer_manager_interface.hpp; sourceTree = "<group>"; };
+		2C301F4F2686F7B20045C2AC /* resource_manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = resource_manager.hpp; sourceTree = "<group>"; };
+		2C301F532686F9260045C2AC /* instanced_mesh_manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = instanced_mesh_manager.hpp; sourceTree = "<group>"; };
+		2C3085CB26B542CE00F72AC5 /* metal_context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = metal_context.h; sourceTree = "<group>"; };
+		2C34EDD226F3D152004B3B20 /* shooting_system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shooting_system.cpp; sourceTree = "<group>"; };
+		2C34EDD326F3D152004B3B20 /* shooting_system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = shooting_system.hpp; sourceTree = "<group>"; };
+		2C3C351126621E0000041372 /* timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = timer.cpp; sourceTree = "<group>"; };
+		2C3C351226621E0000041372 /* timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = timer.hpp; sourceTree = "<group>"; };
+		2C5700DE268858B10067B122 /* resource_manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = resource_manager.cpp; sourceTree = "<group>"; };
+		2C622A132658DEBC0092F428 /* renderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = renderer.mm; sourceTree = "<group>"; };
+		2C622A162658E18F0092F428 /* objc_ref.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objc_ref.h; sourceTree = "<group>"; };
+		2C622A192658EDAA0092F428 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		2C622A1B2658EDB00092F428 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		2C622A1D2658EF550092F428 /* floor_render_pass.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = floor_render_pass.mm; sourceTree = "<group>"; };
+		2C622A1E2658EF550092F428 /* floor_render_pass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = floor_render_pass.h; sourceTree = "<group>"; };
+		2C622A212658F3000092F428 /* Library.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Library.metal; sourceTree = "<group>"; };
+		2C698185265A51DC0076DD51 /* render_pass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = render_pass.h; sourceTree = "<group>"; };
+		2C698186265A56220076DD51 /* render_pass_type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = render_pass_type.h; sourceTree = "<group>"; };
+		2C69818A265A72630076DD51 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		2C698191265D53EC0076DD51 /* matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = matrix.cpp; sourceTree = "<group>"; };
+		2C698192265D53EC0076DD51 /* matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = matrix.hpp; sourceTree = "<group>"; };
+		2C698195265D63810076DD51 /* render_pass_attribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = render_pass_attribute.h; sourceTree = "<group>"; };
+		2C73A13B266BA8F900F4AE09 /* player_input_system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = player_input_system.cpp; sourceTree = "<group>"; };
+		2C73A13C266BA8F900F4AE09 /* player_input_system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = player_input_system.hpp; sourceTree = "<group>"; };
+		2C7818D726748CEA00DFE1CD /* texture_manager_interface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = texture_manager_interface.hpp; sourceTree = "<group>"; };
+		2C7818D826748DB800DFE1CD /* texture_manager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = texture_manager.mm; sourceTree = "<group>"; };
+		2C7818D926748DB800DFE1CD /* texture_manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = texture_manager.h; sourceTree = "<group>"; };
+		2C937BDA26626F9F006C7907 /* player_render_pass.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = player_render_pass.mm; sourceTree = "<group>"; };
+		2C937BDB26626F9F006C7907 /* player_render_pass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player_render_pass.h; sourceTree = "<group>"; };
+		2C9B57CE267A64BF00E9F364 /* transform_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = transform_component.hpp; sourceTree = "<group>"; };
+		2CA1E0F4279317330064D1C1 /* score_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = score_component.hpp; sourceTree = "<group>"; };
+		2CA1E0F62793265C0064D1C1 /* score_string.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = score_string.cpp; sourceTree = "<group>"; };
+		2CA1E0F72793265C0064D1C1 /* score_string.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = score_string.hpp; sourceTree = "<group>"; };
+		2CAA64C726A20DB7001B7CB0 /* entity_pool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = entity_pool.cpp; sourceTree = "<group>"; };
+		2CAA64C826A20DB7001B7CB0 /* entity_pool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = entity_pool.hpp; sourceTree = "<group>"; };
+		2CAA64CB26A21787001B7CB0 /* time_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = time_component.hpp; sourceTree = "<group>"; };
+		2CAA64CD26A21AA5001B7CB0 /* bullet_render_pass.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = bullet_render_pass.mm; sourceTree = "<group>"; };
+		2CAA64CE26A21AA5001B7CB0 /* bullet_render_pass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bullet_render_pass.h; sourceTree = "<group>"; };
+		2CC477A8266CF5930023EB27 /* camera_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = camera_component.hpp; sourceTree = "<group>"; };
+		2CC477AB266D284D0023EB27 /* camera_system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = camera_system.cpp; sourceTree = "<group>"; };
+		2CC477AC266D284D0023EB27 /* camera_system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = camera_system.hpp; sourceTree = "<group>"; };
+		2CC477B6266EA5610023EB27 /* shadow_map_manager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = shadow_map_manager.mm; sourceTree = "<group>"; };
+		2CC477B7266EA5610023EB27 /* shadow_map_manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shadow_map_manager.h; sourceTree = "<group>"; };
+		2CC5C158265967620012199A /* shader_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader_common.h; sourceTree = "<group>"; };
+		2CCB3C1D265103AF00ABB133 /* libassimp-fat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libassimp-fat.a"; path = "../third-party/assimp/lib/iOS/libassimp-fat.a"; sourceTree = "<group>"; };
+		2CCB3C1F2651056400ABB133 /* mesh_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mesh_component.hpp; sourceTree = "<group>"; };
+		2CCB3C2226510ED400ABB133 /* scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scene.cpp; sourceTree = "<group>"; };
+		2CCB3C2326510ED400ABB133 /* scene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = scene.hpp; sourceTree = "<group>"; };
+		2CCB3C2726513C0D00ABB133 /* renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = renderer.h; sourceTree = "<group>"; };
+		2CCEE389265D7FE60038539B /* player_animation_system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = player_animation_system.cpp; sourceTree = "<group>"; };
+		2CCEE38A265D7FE60038539B /* player_animation_system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = player_animation_system.hpp; sourceTree = "<group>"; };
+		2CCEE38D265D85CE0038539B /* movement_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = movement_component.hpp; sourceTree = "<group>"; };
+		2CD7B6D526A73E4A00BED3FB /* collider_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = collider_component.hpp; sourceTree = "<group>"; };
+		2CD8384426A2C25700431592 /* on_exit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = on_exit.hpp; sourceTree = "<group>"; };
+		2CD8384626A2EE1000431592 /* math.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = math.cpp; sourceTree = "<group>"; };
+		2CD8384726A2EE1000431592 /* math.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = math.hpp; sourceTree = "<group>"; };
+		2CE0DFF726AA05EE00FA8504 /* imgui.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = imgui.xcframework; path = "../third-party/imgui.xcframework"; sourceTree = "<group>"; };
+		2CE0DFFB26AA065000FA8504 /* hud.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = hud.mm; sourceTree = "<group>"; };
+		2CE0DFFC26AA065000FA8504 /* hud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hud.h; sourceTree = "<group>"; };
+		2CE4872A27AD843A00967E48 /* input_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = input_component.hpp; sourceTree = "<group>"; };
+		2CE4872C27AD873600967E48 /* game_restart_system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game_restart_system.cpp; sourceTree = "<group>"; };
+		2CE4872D27AD873600967E48 /* game_restart_system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = game_restart_system.hpp; sourceTree = "<group>"; };
+		2CE61E6127B569500097D3DD /* screen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = screen.hpp; sourceTree = "<group>"; };
+		2CE61E6227B569800097D3DD /* play_screen.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = play_screen.mm; sourceTree = "<group>"; };
+		2CE61E6327B569800097D3DD /* play_screen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = play_screen.hpp; sourceTree = "<group>"; };
+		2CE61E6627B569900097D3DD /* game_over_screen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game_over_screen.cpp; sourceTree = "<group>"; };
+		2CE61E6727B569900097D3DD /* game_over_screen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = game_over_screen.hpp; sourceTree = "<group>"; };
+		2CE61E6A27B56C310097D3DD /* enum_array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = enum_array.hpp; sourceTree = "<group>"; };
+		2CE9698426A4840100F195FA /* look_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = look_component.hpp; sourceTree = "<group>"; };
+		2CF2350B26500513007E9080 /* AngryMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF2350E26500513007E9080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CF2351026500513007E9080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2CF2351226500513007E9080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CF2351526500513007E9080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CF2351726500515007E9080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CF2351A26500515007E9080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CF2351C26500515007E9080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF23527265005B4007E9080 /* AngryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AngryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF23529265005B4007E9080 /* AngryKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AngryKit.h; sourceTree = "<group>"; };
+		2CF2352A265005B4007E9080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF2352F265005B4007E9080 /* AngryKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF23536265005B4007E9080 /* AngryKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AngryKitTests.m; sourceTree = "<group>"; };
+		2CF23538265005B4007E9080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF2354526500732007E9080 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		2CF2354626500732007E9080 /* Game.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Game.mm; sourceTree = "<group>"; };
+		2CF7160E267783F0000133BB /* enemy_system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = enemy_system.cpp; sourceTree = "<group>"; };
+		2CF7160F267783F0000133BB /* enemy_system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = enemy_system.hpp; sourceTree = "<group>"; };
+		2CF7161226779C27000133BB /* enemy_render_pass.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = enemy_render_pass.mm; sourceTree = "<group>"; };
+		2CF7161326779C27000133BB /* enemy_render_pass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = enemy_render_pass.h; sourceTree = "<group>"; };
+		2CFB1437268E32BF00D089B4 /* instanced_mesh_manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = instanced_mesh_manager.cpp; sourceTree = "<group>"; };
+		2CFBD21026962D5100425369 /* bullet_system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bullet_system.cpp; sourceTree = "<group>"; };
+		2CFBD21126962D5100425369 /* bullet_system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bullet_system.hpp; sourceTree = "<group>"; };
+		2CFF9AB6267DD74500042787 /* health_component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = health_component.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CF2350826500513007E9080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF2353C265005B4007E9080 /* AngryKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF23524265005B4007E9080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1E67C42663724C0038FCBE /* Accelerate.framework in Frameworks */,
+				2C622A1A2658EDAA0092F428 /* Metal.framework in Frameworks */,
+				2C622A1C2658EDB00092F428 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF2352C265005B4007E9080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF23530265005B4007E9080 /* AngryKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C76160A267F1FCD007AF197 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				2C254959265EE04600198EFA /* buffer_manager_interface.hpp */,
+				2C254955265EDB0F00198EFA /* buffer_manager.h */,
+				2C254954265EDB0F00198EFA /* buffer_manager.mm */,
+				2CAA64CE26A21AA5001B7CB0 /* bullet_render_pass.h */,
+				2CAA64CD26A21AA5001B7CB0 /* bullet_render_pass.mm */,
+				2CF7161326779C27000133BB /* enemy_render_pass.h */,
+				2CF7161226779C27000133BB /* enemy_render_pass.mm */,
+				2C622A1E2658EF550092F428 /* floor_render_pass.h */,
+				2C622A1D2658EF550092F428 /* floor_render_pass.mm */,
+				2CFB1437268E32BF00D089B4 /* instanced_mesh_manager.cpp */,
+				2C301F532686F9260045C2AC /* instanced_mesh_manager.hpp */,
+				2C622A212658F3000092F428 /* Library.metal */,
+				2C937BDB26626F9F006C7907 /* player_render_pass.h */,
+				2C937BDA26626F9F006C7907 /* player_render_pass.mm */,
+				2C698195265D63810076DD51 /* render_pass_attribute.h */,
+				2C698186265A56220076DD51 /* render_pass_type.h */,
+				2C698185265A51DC0076DD51 /* render_pass.h */,
+				2CCB3C2726513C0D00ABB133 /* renderer.h */,
+				2C622A132658DEBC0092F428 /* renderer.mm */,
+				2C5700DE268858B10067B122 /* resource_manager.cpp */,
+				2C301F4F2686F7B20045C2AC /* resource_manager.hpp */,
+				2CC5C158265967620012199A /* shader_common.h */,
+				2CC477B7266EA5610023EB27 /* shadow_map_manager.h */,
+				2CC477B6266EA5610023EB27 /* shadow_map_manager.mm */,
+				2C7818D726748CEA00DFE1CD /* texture_manager_interface.hpp */,
+				2C7818D926748DB800DFE1CD /* texture_manager.h */,
+				2C7818D826748DB800DFE1CD /* texture_manager.mm */,
+			);
+			name = Rendering;
+			sourceTree = "<group>";
+		};
+		2CC0A08027A70B76007B9ACC /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				2CE61E6627B569900097D3DD /* game_over_screen.cpp */,
+				2CE61E6727B569900097D3DD /* game_over_screen.hpp */,
+				2CE0DFFC26AA065000FA8504 /* hud.h */,
+				2CE0DFFB26AA065000FA8504 /* hud.mm */,
+				2CE61E6227B569800097D3DD /* play_screen.mm */,
+				2CE61E6327B569800097D3DD /* play_screen.hpp */,
+				2CA1E0F62793265C0064D1C1 /* score_string.cpp */,
+				2CA1E0F72793265C0064D1C1 /* score_string.hpp */,
+				2CE61E6127B569500097D3DD /* screen.hpp */,
+			);
+			name = HUD;
+			sourceTree = "<group>";
+		};
+		2CC477B3266D344A0023EB27 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				2CFBD21026962D5100425369 /* bullet_system.cpp */,
+				2CFBD21126962D5100425369 /* bullet_system.hpp */,
+				2CC477AB266D284D0023EB27 /* camera_system.cpp */,
+				2CC477AC266D284D0023EB27 /* camera_system.hpp */,
+				2CF7160E267783F0000133BB /* enemy_system.cpp */,
+				2CF7160F267783F0000133BB /* enemy_system.hpp */,
+				2CE4872C27AD873600967E48 /* game_restart_system.cpp */,
+				2CE4872D27AD873600967E48 /* game_restart_system.hpp */,
+				2CCEE389265D7FE60038539B /* player_animation_system.cpp */,
+				2CCEE38A265D7FE60038539B /* player_animation_system.hpp */,
+				2C73A13B266BA8F900F4AE09 /* player_input_system.cpp */,
+				2C73A13C266BA8F900F4AE09 /* player_input_system.hpp */,
+				2C34EDD226F3D152004B3B20 /* shooting_system.cpp */,
+				2C34EDD326F3D152004B3B20 /* shooting_system.hpp */,
+			);
+			name = Systems;
+			sourceTree = "<group>";
+		};
+		2CC477B5266D34D40023EB27 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2C1E67C626639BBA0038FCBE /* animation_component.hpp */,
+				2CC477A8266CF5930023EB27 /* camera_component.hpp */,
+				2CD7B6D526A73E4A00BED3FB /* collider_component.hpp */,
+				2CFF9AB6267DD74500042787 /* health_component.hpp */,
+				2CE4872A27AD843A00967E48 /* input_component.hpp */,
+				2C21D46E268237D300E6BB9C /* instanced_mesh_component.hpp */,
+				2CE9698426A4840100F195FA /* look_component.hpp */,
+				2CCB3C1F2651056400ABB133 /* mesh_component.hpp */,
+				2CCEE38D265D85CE0038539B /* movement_component.hpp */,
+				2CA1E0F4279317330064D1C1 /* score_component.hpp */,
+				2CAA64CB26A21787001B7CB0 /* time_component.hpp */,
+				2C9B57CE267A64BF00E9F364 /* transform_component.hpp */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		2CCB3C1C265103AF00ABB133 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0DFF726AA05EE00FA8504 /* imgui.xcframework */,
+				2C1E67C32663724C0038FCBE /* Accelerate.framework */,
+				2C622A1B2658EDB00092F428 /* MetalKit.framework */,
+				2C622A192658EDAA0092F428 /* Metal.framework */,
+				2CCB3C1D265103AF00ABB133 /* libassimp-fat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CF2350226500513007E9080 = {
+			isa = PBXGroup;
+			children = (
+				2CF2350D26500513007E9080 /* AngryMetal */,
+				2CF23528265005B4007E9080 /* AngryKit */,
+				2CF23535265005B4007E9080 /* AngryKitTests */,
+				2CF2350C26500513007E9080 /* Products */,
+				2CCB3C1C265103AF00ABB133 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2CF2350C26500513007E9080 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CF2350B26500513007E9080 /* AngryMetal.app */,
+				2CF23527265005B4007E9080 /* AngryKit.framework */,
+				2CF2352F265005B4007E9080 /* AngryKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CF2350D26500513007E9080 /* AngryMetal */ = {
+			isa = PBXGroup;
+			children = (
+				2C69818A265A72630076DD51 /* Assets */,
+				2CF2350E26500513007E9080 /* AppDelegate.swift */,
+				2CF2351026500513007E9080 /* SceneDelegate.swift */,
+				2CF2351226500513007E9080 /* ViewController.swift */,
+				2CF2351426500513007E9080 /* Main.storyboard */,
+				2CF2351726500515007E9080 /* Assets.xcassets */,
+				2CF2351926500515007E9080 /* LaunchScreen.storyboard */,
+				2CF2351C26500515007E9080 /* Info.plist */,
+			);
+			path = AngryMetal;
+			sourceTree = "<group>";
+		};
+		2CF23528265005B4007E9080 /* AngryKit */ = {
+			isa = PBXGroup;
+			children = (
+				2CF23529265005B4007E9080 /* AngryKit.h */,
+				2CC477B5266D34D40023EB27 /* Components */,
+				2CAA64C726A20DB7001B7CB0 /* entity_pool.cpp */,
+				2CAA64C826A20DB7001B7CB0 /* entity_pool.hpp */,
+				2CE61E6A27B56C310097D3DD /* enum_array.hpp */,
+				2CF2354526500732007E9080 /* Game.h */,
+				2CF2354626500732007E9080 /* Game.mm */,
+				2CC0A08027A70B76007B9ACC /* HUD */,
+				2C03DEEC2659798C005A3437 /* image.cpp */,
+				2C03DEED2659798C005A3437 /* image.hpp */,
+				2CF2352A265005B4007E9080 /* Info.plist */,
+				2CD8384626A2EE1000431592 /* math.cpp */,
+				2CD8384726A2EE1000431592 /* math.hpp */,
+				2C698191265D53EC0076DD51 /* matrix.cpp */,
+				2C698192265D53EC0076DD51 /* matrix.hpp */,
+				2C21D4702682384800E6BB9C /* mesh.hpp */,
+				2C3085CB26B542CE00F72AC5 /* metal_context.h */,
+				2C622A162658E18F0092F428 /* objc_ref.h */,
+				2CD8384426A2C25700431592 /* on_exit.hpp */,
+				2C76160A267F1FCD007AF197 /* Rendering */,
+				2CCB3C2226510ED400ABB133 /* scene.cpp */,
+				2CCB3C2326510ED400ABB133 /* scene.hpp */,
+				2CC477B3266D344A0023EB27 /* Systems */,
+				2C3C351126621E0000041372 /* timer.cpp */,
+				2C3C351226621E0000041372 /* timer.hpp */,
+			);
+			path = AngryKit;
+			sourceTree = "<group>";
+		};
+		2CF23535265005B4007E9080 /* AngryKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CF23536265005B4007E9080 /* AngryKitTests.m */,
+				2CF23538265005B4007E9080 /* Info.plist */,
+			);
+			path = AngryKitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2CF23522265005B4007E9080 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF2354726500732007E9080 /* Game.h in Headers */,
+				2C622A202658EF550092F428 /* floor_render_pass.h in Headers */,
+				2CCB3C2526510ED400ABB133 /* scene.hpp in Headers */,
+				2C7818DB26748DB800DFE1CD /* texture_manager.h in Headers */,
+				2C5700E0268888580067B122 /* camera_component.hpp in Headers */,
+				2CE0DFFE26AA065000FA8504 /* hud.h in Headers */,
+				2C301F512686F8190045C2AC /* buffer_manager_interface.hpp in Headers */,
+				2CE4872F27AD873600967E48 /* game_restart_system.hpp in Headers */,
+				2CE9698526A4840100F195FA /* look_component.hpp in Headers */,
+				2C937BDD26626F9F006C7907 /* player_render_pass.h in Headers */,
+				2CE4872B27AD843A00967E48 /* input_component.hpp in Headers */,
+				2C21D4712682384800E6BB9C /* mesh.hpp in Headers */,
+				2C3C351426621E0000041372 /* timer.hpp in Headers */,
+				2CA1E0F92793265C0064D1C1 /* score_string.hpp in Headers */,
+				2CCEE38C265D7FE60038539B /* player_animation_system.hpp in Headers */,
+				2C1E67C826639BBA0038FCBE /* animation_component.hpp in Headers */,
+				2CE61E6927B569900097D3DD /* game_over_screen.hpp in Headers */,
+				2C301F502686F7B20045C2AC /* resource_manager.hpp in Headers */,
+				2C301F522686F8280045C2AC /* texture_manager_interface.hpp in Headers */,
+				2C21D46F268237D300E6BB9C /* instanced_mesh_component.hpp in Headers */,
+				2CCB3C2926513C0D00ABB133 /* renderer.h in Headers */,
+				2CF71611267783F0000133BB /* enemy_system.hpp in Headers */,
+				2C5700E32688889C0067B122 /* render_pass.h in Headers */,
+				2CC5C159265967620012199A /* shader_common.h in Headers */,
+				2C698194265D53EC0076DD51 /* matrix.hpp in Headers */,
+				2CD8384926A2EE1000431592 /* math.hpp in Headers */,
+				2CFF9AB7267DD74500042787 /* health_component.hpp in Headers */,
+				2CAA64CA26A20DB7001B7CB0 /* entity_pool.hpp in Headers */,
+				2CAA64D026A21AA5001B7CB0 /* bullet_render_pass.h in Headers */,
+				2C5700E22688888F0067B122 /* render_pass_attribute.h in Headers */,
+				2CF7161526779C27000133BB /* enemy_render_pass.h in Headers */,
+				2C698187265A56220076DD51 /* render_pass_type.h in Headers */,
+				2CCB3C212651056400ABB133 /* mesh_component.hpp in Headers */,
+				2C9B57CF267A65A700E9F364 /* transform_component.hpp in Headers */,
+				2C3085CD26B542CE00F72AC5 /* metal_context.h in Headers */,
+				2CA1E0F5279317390064D1C1 /* score_component.hpp in Headers */,
+				2C5700E1268888670067B122 /* movement_component.hpp in Headers */,
+				2CD7B6D626A73E5000BED3FB /* collider_component.hpp in Headers */,
+				2CFBD21326962D5100425369 /* bullet_system.hpp in Headers */,
+				2C73A13E266BA8F900F4AE09 /* player_input_system.hpp in Headers */,
+				2C622A182658E18F0092F428 /* objc_ref.h in Headers */,
+				2CC477B9266EA5610023EB27 /* shadow_map_manager.h in Headers */,
+				2C301F542686F9260045C2AC /* instanced_mesh_manager.hpp in Headers */,
+				2C254957265EDB0F00198EFA /* buffer_manager.h in Headers */,
+				2CF23539265005B4007E9080 /* AngryKit.h in Headers */,
+				2C34EDD526F3D152004B3B20 /* shooting_system.hpp in Headers */,
+				2CC477AE266D284D0023EB27 /* camera_system.hpp in Headers */,
+				2CE61E6527B569800097D3DD /* play_screen.hpp in Headers */,
+				2C03DEEF2659798C005A3437 /* image.hpp in Headers */,
+				2CAA64CC26A21787001B7CB0 /* time_component.hpp in Headers */,
+				2CD8384526A2C25700431592 /* on_exit.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2CF2350A26500513007E9080 /* AngryMetal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF2351F26500515007E9080 /* Build configuration list for PBXNativeTarget "AngryMetal" */;
+			buildPhases = (
+				2CF2350726500513007E9080 /* Sources */,
+				2CF2350826500513007E9080 /* Frameworks */,
+				2CF2350926500513007E9080 /* Resources */,
+				2CF23541265005B4007E9080 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF2353B265005B4007E9080 /* PBXTargetDependency */,
+			);
+			name = AngryMetal;
+			productName = AngryMetal;
+			productReference = 2CF2350B26500513007E9080 /* AngryMetal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CF23526265005B4007E9080 /* AngryKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF2353E265005B4007E9080 /* Build configuration list for PBXNativeTarget "AngryKit" */;
+			buildPhases = (
+				2CF23522265005B4007E9080 /* Headers */,
+				2CF23523265005B4007E9080 /* Sources */,
+				2CF23524265005B4007E9080 /* Frameworks */,
+				2CF23525265005B4007E9080 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AngryKit;
+			productName = AngryKit;
+			productReference = 2CF23527265005B4007E9080 /* AngryKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2CF2352E265005B4007E9080 /* AngryKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF23542265005B4007E9080 /* Build configuration list for PBXNativeTarget "AngryKitTests" */;
+			buildPhases = (
+				2CF2352B265005B4007E9080 /* Sources */,
+				2CF2352C265005B4007E9080 /* Frameworks */,
+				2CF2352D265005B4007E9080 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF23532265005B4007E9080 /* PBXTargetDependency */,
+				2CF23534265005B4007E9080 /* PBXTargetDependency */,
+			);
+			name = AngryKitTests;
+			productName = AngryKitTests;
+			productReference = 2CF2352F265005B4007E9080 /* AngryKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CF2350326500513007E9080 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					2CF2350A26500513007E9080 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					2CF23526265005B4007E9080 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					2CF2352E265005B4007E9080 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 2CF2350A26500513007E9080;
+					};
+				};
+			};
+			buildConfigurationList = 2CF2350626500513007E9080 /* Build configuration list for PBXProject "AngryMetal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CF2350226500513007E9080;
+			productRefGroup = 2CF2350C26500513007E9080 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CF2350A26500513007E9080 /* AngryMetal */,
+				2CF23526265005B4007E9080 /* AngryKit */,
+				2CF2352E265005B4007E9080 /* AngryKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CF2350926500513007E9080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF2351B26500515007E9080 /* LaunchScreen.storyboard in Resources */,
+				2C69818B265A72630076DD51 /* Assets in Resources */,
+				2CF2351826500515007E9080 /* Assets.xcassets in Resources */,
+				2CF2351626500513007E9080 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF23525265005B4007E9080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF2352D265005B4007E9080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CF2350726500513007E9080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF2351326500513007E9080 /* ViewController.swift in Sources */,
+				2CF2350F26500513007E9080 /* AppDelegate.swift in Sources */,
+				2CF2351126500513007E9080 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF23523265005B4007E9080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C34EDD426F3D152004B3B20 /* shooting_system.cpp in Sources */,
+				2CE61E6427B569800097D3DD /* play_screen.mm in Sources */,
+				2C698193265D53EC0076DD51 /* matrix.cpp in Sources */,
+				2C622A142658DEBC0092F428 /* renderer.mm in Sources */,
+				2C03DEEE2659798C005A3437 /* image.cpp in Sources */,
+				2C3C351326621E0000041372 /* timer.cpp in Sources */,
+				2C254956265EDB0F00198EFA /* buffer_manager.mm in Sources */,
+				2CE0DFFD26AA065000FA8504 /* hud.mm in Sources */,
+				2CCEE38B265D7FE60038539B /* player_animation_system.cpp in Sources */,
+				2CC477B8266EA5610023EB27 /* shadow_map_manager.mm in Sources */,
+				2CCB3C2426510ED400ABB133 /* scene.cpp in Sources */,
+				2C937BDC26626F9F006C7907 /* player_render_pass.mm in Sources */,
+				2C622A1F2658EF550092F428 /* floor_render_pass.mm in Sources */,
+				2C73A13D266BA8F900F4AE09 /* player_input_system.cpp in Sources */,
+				2CD8384826A2EE1000431592 /* math.cpp in Sources */,
+				2CF7161426779C27000133BB /* enemy_render_pass.mm in Sources */,
+				2CAA64CF26A21AA5001B7CB0 /* bullet_render_pass.mm in Sources */,
+				2CFBD21226962D5100425369 /* bullet_system.cpp in Sources */,
+				2C7818DA26748DB800DFE1CD /* texture_manager.mm in Sources */,
+				2CE4872E27AD873600967E48 /* game_restart_system.cpp in Sources */,
+				2CE61E6827B569900097D3DD /* game_over_screen.cpp in Sources */,
+				2CF2354826500732007E9080 /* Game.mm in Sources */,
+				2CAA64C926A20DB7001B7CB0 /* entity_pool.cpp in Sources */,
+				2CF71610267783F0000133BB /* enemy_system.cpp in Sources */,
+				2C622A222658F3000092F428 /* Library.metal in Sources */,
+				2CC477AD266D284D0023EB27 /* camera_system.cpp in Sources */,
+				2CA1E0F82793265C0064D1C1 /* score_string.cpp in Sources */,
+				2CFB1438268E32BF00D089B4 /* instanced_mesh_manager.cpp in Sources */,
+				2C5700DF268858B10067B122 /* resource_manager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF2352B265005B4007E9080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF23537265005B4007E9080 /* AngryKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CF23532265005B4007E9080 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF23526265005B4007E9080 /* AngryKit */;
+			targetProxy = 2CF23531265005B4007E9080 /* PBXContainerItemProxy */;
+		};
+		2CF23534265005B4007E9080 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF2350A26500513007E9080 /* AngryMetal */;
+			targetProxy = 2CF23533265005B4007E9080 /* PBXContainerItemProxy */;
+		};
+		2CF2353B265005B4007E9080 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF23526265005B4007E9080 /* AngryKit */;
+			targetProxy = 2CF2353A265005B4007E9080 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CF2351426500513007E9080 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF2351526500513007E9080 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CF2351926500515007E9080 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF2351A26500515007E9080 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CF2351D26500515007E9080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2CF2351E26500515007E9080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CF2352026500515007E9080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G38VA7FQQ2;
+				INFOPLIST_FILE = AngryMetal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunarkey.AngryMetal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CF2352126500515007E9080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G38VA7FQQ2;
+				INFOPLIST_FILE = AngryMetal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunarkey.AngryMetal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2CF2353F265005B4007E9080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G38VA7FQQ2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_SIGN_COMPARE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../third-party/assimp/include",
+					"$(SRCROOT)/../third-party/entt/include",
+					"$(SRCROOT)/../third-party/stb/include",
+					"$(SRCROOT)/../third-party/imgui",
+				);
+				INFOPLIST_FILE = AngryKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../third-party/assimp/lib/iOS",
+					"$(SRCROOT)/../third-party/imgui/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-lassimp-fat",
+					"-limgui-fat",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunarkey.AngryKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2CF23540265005B4007E9080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G38VA7FQQ2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_SIGN_COMPARE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../third-party/assimp/include",
+					"$(SRCROOT)/../third-party/entt/include",
+					"$(SRCROOT)/../third-party/stb/include",
+					"$(SRCROOT)/../third-party/imgui",
+				);
+				INFOPLIST_FILE = AngryKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../third-party/assimp/lib/iOS",
+					"$(SRCROOT)/../third-party/imgui/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-lassimp-fat",
+					"-limgui-fat",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunarkey.AngryKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2CF23543265005B4007E9080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G38VA7FQQ2;
+				INFOPLIST_FILE = AngryKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunarkey.AngryKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngryMetal.app/AngryMetal";
+			};
+			name = Debug;
+		};
+		2CF23544265005B4007E9080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G38VA7FQQ2;
+				INFOPLIST_FILE = AngryKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunarkey.AngryKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngryMetal.app/AngryMetal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CF2350626500513007E9080 /* Build configuration list for PBXProject "AngryMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF2351D26500515007E9080 /* Debug */,
+				2CF2351E26500515007E9080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF2351F26500515007E9080 /* Build configuration list for PBXNativeTarget "AngryMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF2352026500515007E9080 /* Debug */,
+				2CF2352126500515007E9080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF2353E265005B4007E9080 /* Build configuration list for PBXNativeTarget "AngryKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF2353F265005B4007E9080 /* Debug */,
+				2CF23540265005B4007E9080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF23542265005B4007E9080 /* Build configuration list for PBXNativeTarget "AngryKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF23543265005B4007E9080 /* Debug */,
+				2CF23544265005B4007E9080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CF2350326500513007E9080 /* Project object */;
+}
